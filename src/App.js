@@ -1,25 +1,25 @@
-import logo from './logo.svg';
 import './App.css';
+import { animals } from './data.js';
+import Main from './Main/main.js';
+import backgroundImage from './background.png';
+import Header from './Header/header.js';
+import Footer from './Footer/footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {
+        <Header email={'dfrancisco2677@gmail.com'}/>
+      }
+      <div className='animalsDiv' style={{ backgroundImage: `url(${backgroundImage})` }}>
+        {
+          <Main animals={animals}/>
+        }
+      </div>
+      {
+        <Footer year={'2022'}/>
+      }
+    </>
   );
 }
-
 export default App;
