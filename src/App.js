@@ -3,6 +3,7 @@ import { animals } from './data.js';
 import Main from './Main/main.js';
 import backgroundImage from './background.png';
 import Header from './Header/header.js';
+import Footer from './Footer/footer.js';
 
 function App() {
   return (
@@ -15,6 +16,9 @@ function App() {
           <Main animals={animals}/>
         }
       </div>
+      {
+        <Footer year={'2022'}/>
+      }
     </>
   );
 }

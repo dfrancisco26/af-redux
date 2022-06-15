@@ -13,3 +13,8 @@ img {
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+.animalDiv p {
+  background-color: antiquewhite;
+  max-width: fit-content;
+}
