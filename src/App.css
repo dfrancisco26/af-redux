@@ -1,8 +1,15 @@
-img {
-  width: 40px;
-  display: flex;
+.animalDiv img {
+width: 60px;
+
 }
 
 .animalsDiv {
-  
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+img {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
